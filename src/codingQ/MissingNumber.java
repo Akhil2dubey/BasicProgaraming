@@ -9,10 +9,11 @@ public class MissingNumber {
 
 	public static int missingnum(int nums[]) {
 		int sum = 0;
-		for (int i = 0; i < nums.length; i++) {
+		for (int i = 0; i <= nums.length-1; i++) {
 			sum = sum + nums[i];
 		}
 		int actualSum = (nums.length * (nums.length + 1)) / 2;
 		return actualSum - sum;
 	}
 }
+  
